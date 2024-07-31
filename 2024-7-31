@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-//ÊµÏÖqsort¹¦ÄÜµÄbubbleSort 
+//å®ç°qsortåŠŸèƒ½çš„bubbleSort 
 
 int cmpByInt(const void* p1,const void* p2)
 {
@@ -25,14 +25,14 @@ void Swap(char* buf1,char*buf2,int width)
 void bubbleSort(void* base,unsigned int sz,unsigned int width,int(*cmp)(const void* p1,const void* p2))
 {
     int i;
-    //ÌËÊı
+    //è¶Ÿæ•°
     for(i=0;i<sz-1;i++)
     {
         int j;
-        int flag = 1;//¼ÙÉèµ±Ç°ÎªÀíÏëË³Ğò
+        int flag = 1;//å‡è®¾å½“å‰ä¸ºç†æƒ³é¡ºåº
         for(j=0;j<sz-1;j++)
         {
-            if(cmp((char*)base+j*width,(char*)base+(j+1)*width)>0)//Èç¹û±È½Ï½á¹û´óÓÚ0£¬Ôò½»»»ÔªËØÅÅĞò
+            if(cmp((char*)base+j*width,(char*)base+(j+1)*width)>0)//å¦‚æœæ¯”è¾ƒç»“æœå¤§äº0ï¼Œåˆ™äº¤æ¢å…ƒç´ æ’åº
             {
                 Swap((char*)base+j*width,(char*)base+(j+1)*width,width);
             }
