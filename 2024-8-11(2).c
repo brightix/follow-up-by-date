@@ -19,7 +19,7 @@ int main()
 {
 
     
-    FILE* ptr = fopen("C:\\Users\\21811\\Desktop\\test.txt","r+");
+    FILE* ptr = fopen("C:\\Users\\(username)\\Desktop\\test.txt","r+");
     if(ptr==NULL)
     {
         perror("fopen");
