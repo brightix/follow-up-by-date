@@ -1,7 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <assert.h>
 typedef int LLDataType;
 
 typedef struct linkList
@@ -12,5 +12,8 @@ typedef struct linkList
 
 //void initLL();
 
-void LLPushBack(LLNode** pplist,LLDataType x);
-void DestroyLL(LLNode** pplist);
+void LLPushBack(LLNode** pphead,LLDataType x);
+void LLPushFront(LLNode** pphead, LLDataType x);
+void LLPopBack(LLNode** pphead);
+void LLPopFront(LLNode** pphead);
+void DestroyLL(LLNode** pphead);
