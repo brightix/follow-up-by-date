@@ -86,7 +86,7 @@ public:
     }
     void play()
     {
-        std::cout << "还没有定义" << std::endl;
+        std::cout << "喵喵在玩耍~" << std::endl;
     }
 
 
