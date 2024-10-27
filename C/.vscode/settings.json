@@ -1,0 +1,11 @@
+{
+    "files.encoding": "utf8",
+    "files.associations": {
+        "contact.h": "c",
+        "typeinfo": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "string_view": "c"
+    }
+}
