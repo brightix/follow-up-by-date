@@ -19,6 +19,8 @@ MAIN
     for(int& x : array){
         std::cin >> x;
     }
+
+    std::cout << "我测你的码" << std::endl;
     for(int i : array){
         std::cout << i << std::endl;
     }
